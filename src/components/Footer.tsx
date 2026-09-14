@@ -23,7 +23,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAdmissionModal }) => {
   };
 
   return (
-    <footer id="contact" className="bg-[#0A2647] text-slate-200 pt-16 pb-12 border-t border-slate-800 relative">
+    <footer id="contact" className="bg-[#0A2647] text-slate-200 pt-16 pb-20 sm:pb-12 border-t border-slate-800 relative">
       {/* Ambient background glow */}
       <div className="absolute top-0 right-1/3 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

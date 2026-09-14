@@ -56,22 +56,20 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAdmissionModal }) => {
       </div>
 
       {/* Main Navigation Bar */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 sm:h-20 gap-2">
           
           {/* Right Brand Identity (RTL Start) */}
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#FF7A00] via-amber-500 to-[#0A2647] flex items-center justify-center text-white shadow-md shadow-orange-500/20 ring-2 ring-orange-200">
-              <BookOpen className="w-6 h-6 text-white" />
+          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-[#FF7A00] via-amber-500 to-[#0A2647] flex items-center justify-center text-white shadow-md shadow-orange-500/20 ring-2 ring-orange-200 shrink-0">
+              <BookOpen className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
             </div>
-            <div className="flex flex-col">
-              <div className="flex items-center gap-2">
-                <span className="text-xl sm:text-2xl font-bold text-[#0A2647] font-arabic-heading tracking-wide">
-                  {MADRASA_INFO.nameUrdu}
-                </span>
-              </div>
-              <span className="text-xs font-semibold text-slate-500 tracking-wider font-modern-ui">
-                Kanz-ul-Ilm Islamic Education System Multan
+            <div className="flex flex-col min-w-0">
+              <span className="text-base sm:text-2xl font-bold text-[#0A2647] font-arabic-heading tracking-wide truncate">
+                {MADRASA_INFO.nameUrdu}
+              </span>
+              <span className="text-[10px] sm:text-xs font-semibold text-slate-500 tracking-wider font-modern-ui truncate">
+                Kanz-ul-Ilm Islamic Education System
               </span>
             </div>
           </div>

@@ -28,18 +28,18 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAdmissionModal }) => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Hadith & Admission Banner */}
-        <div className="flex flex-col items-center justify-center text-center mb-8">
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-amber-400/40 text-amber-300 px-5 py-2 rounded-full text-sm font-semibold shadow-lg shadow-black/20 mb-3">
-            <span className="w-2.5 h-2.5 rounded-full bg-[#FF7A00] animate-ping" />
-            <span className="font-arabic-heading text-base sm:text-lg font-bold text-amber-200">
+        <div className="flex flex-col items-center justify-center text-center mb-6 sm:mb-8 px-1">
+          <div className="inline-flex max-w-full flex-wrap items-center justify-center gap-1.5 sm:gap-2 bg-white/10 backdrop-blur-md border border-amber-400/40 text-amber-300 px-3 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold shadow-lg shadow-black/20 mb-3 text-center">
+            <span className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#FF7A00] animate-ping shrink-0" />
+            <span className="font-arabic-heading text-sm sm:text-lg font-bold text-amber-200">
               خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ
             </span>
-            <span className="text-xs text-amber-300/80 hidden sm:inline">(تم میں سے بہترین وہ ہے جو قرآن سیکھے اور سکھائے - الحدیث)</span>
+            <span className="text-[11px] sm:text-xs text-amber-300/80 hidden md:inline">(تم میں سے بہترین وہ ہے جو قرآن سیکھے اور سکھائے - الحدیث)</span>
           </div>
 
-          <div className="inline-flex items-center gap-2 bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 px-3.5 py-1 rounded-full text-xs font-bold tracking-wide shadow-sm">
-            <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
-            <span>داخلہ جاری ہے • ADMISSION OPEN 2026-2027</span>
+          <div className="inline-flex max-w-full items-center gap-1.5 sm:gap-2 bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 px-3 py-1 rounded-full text-[11px] sm:text-xs font-bold tracking-wide shadow-sm text-center">
+            <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-emerald-400 shrink-0" />
+            <span className="truncate">داخلہ جاری ہے • ADMISSION OPEN 2026-2027</span>
           </div>
         </div>
 
@@ -50,39 +50,39 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAdmissionModal }) => {
           <div className="lg:col-span-7 text-center lg:text-right space-y-6">
             
             {/* Big Madrasa Heading in Urdu */}
-            <div className="space-y-2">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white font-arabic-heading leading-tight tracking-normal">
-                <span className="block text-slate-200">مدرسہ</span>
+            <div className="space-y-1 sm:space-y-2">
+              <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white font-arabic-heading leading-tight tracking-normal">
+                <span className="block text-slate-200 text-xl sm:text-3xl md:text-4xl mb-1">مدرسہ</span>
                 <span className="text-transparent bg-clip-text bg-gradient-to-l from-[#FF9E2C] via-[#FF7A00] to-amber-300">
                   کنز العلم
                 </span>
-                <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-1 text-white">
+                <span className="block text-xl sm:text-3xl md:text-4xl lg:text-5xl mt-1 text-white">
                   اسلامک ایجوکیشن سسٹم
                 </span>
               </h1>
 
               {/* Subheading / Tagline */}
-              <p className="text-lg sm:text-xl md:text-2xl font-bold text-amber-200 font-urdu-nastaliq leading-relaxed pt-2">
+              <p className="text-base sm:text-xl md:text-2xl font-bold text-amber-200 font-urdu-nastaliq leading-relaxed pt-1 sm:pt-2">
                 &ldquo;بچوں کو اسلامی تعلیم کے ساتھ بہترین جدید تعلیم فراہم کریں&rdquo;
               </p>
             </div>
 
             {/* Parent Investment Motto */}
-            <div className="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-4 sm:p-5 text-right shadow-xl">
-              <p className="text-slate-100 font-medium text-sm sm:text-base leading-relaxed">
+            <div className="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-3.5 sm:p-5 text-right shadow-xl">
+              <p className="text-slate-100 font-medium text-xs sm:text-base leading-relaxed">
                 جہاں اپنے بچوں کو اسکول کی تعلیم کے ساتھ بہترین <span className="font-bold text-amber-400">حافظِ قرآن</span> بنا کر عالمِ آخرت کے لیے دائمی سرمایہ کاری کر سکتے ہیں۔
               </p>
-              <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-slate-200 font-semibold">
+              <div className="mt-3 flex flex-wrap items-center justify-start gap-x-3 gap-y-2 text-[11px] sm:text-xs text-slate-200 font-semibold">
                 <span className="inline-flex items-center gap-1 text-emerald-300">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
                   صرف 2 سال میں مکمل حفظ
                 </span>
                 <span className="inline-flex items-center gap-1 text-emerald-300">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
                   مار پیٹ سے پاک شفقت والا ماحول
                 </span>
                 <span className="inline-flex items-center gap-1 text-emerald-300">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
                   کمپیوٹر و عصری تعلیم
                 </span>
               </div>

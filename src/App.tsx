@@ -28,12 +28,12 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans selection:bg-[#FF7A00] selection:text-white" dir="rtl">
+    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans selection:bg-[#FF7A00] selection:text-white overflow-x-hidden w-full max-w-full" dir="rtl">
       {/* Navigation */}
       <Navbar onOpenAdmissionModal={handleOpenAdmissionModal} />
 
       {/* Main Content Sections */}
-      <main className="flex-1">
+      <main className="flex-1 overflow-x-hidden w-full">
         {/* Hero Section */}
         <Hero onOpenAdmissionModal={handleOpenAdmissionModal} />
 

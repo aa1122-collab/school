@@ -25,9 +25,9 @@ export const KeyInfoBanner: React.FC = () => {
   };
 
   return (
-    <section id="key-info" className="relative -mt-8 sm:-mt-10 z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="key-info" className="relative -mt-6 sm:-mt-10 z-20 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
       {/* Outer Card with Light Elegant Theme */}
-      <div className="relative bg-white rounded-3xl shadow-xl border border-slate-200 p-5 sm:p-8 lg:p-10 overflow-hidden text-slate-900">
+      <div className="relative bg-white rounded-2xl sm:rounded-3xl shadow-xl border border-slate-200 p-4 sm:p-8 lg:p-10 overflow-hidden text-slate-900">
         
         {/* Subtle Decorative Background Geometry */}
         <div className="absolute -top-20 -right-20 w-72 h-72 rounded-full bg-orange-100/50 blur-3xl pointer-events-none" />

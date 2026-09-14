@@ -28,8 +28,8 @@ export const StickyContactBar: React.FC = () => {
 
   return (
     <>
-      {/* Floating Desktop & Mobile WhatsApp Widget (Bottom Left in RTL) */}
-      <div className="fixed bottom-6 left-6 z-40 flex flex-col items-center gap-3">
+      {/* Floating Desktop WhatsApp Widget (Bottom Left in RTL, hidden on mobile since bottom bar takes over) */}
+      <div className="fixed bottom-6 left-6 z-40 hidden sm:flex flex-col items-center gap-3">
         {showBackToTop && (
           <button
             onClick={scrollToTop}

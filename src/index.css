@@ -10,10 +10,15 @@
   html {
     scroll-behavior: smooth;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    overflow-x: hidden;
+    width: 100%;
   }
 
   body {
     font-family: 'Alexandria', 'Noto Nastaliq Urdu', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
   }
 }
 
