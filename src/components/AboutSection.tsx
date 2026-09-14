@@ -1,6 +1,7 @@
 import React from 'react';
 import { Award, Heart, CheckCircle2, Phone, MessageCircle, Quote, ShieldAlert, BookOpen } from 'lucide-react';
 import { MADRASA_INFO } from '../data/madrasaData';
+import facilityImage from '../assets/images/madrasa_facility_1789365582112.jpg';
 
 interface AboutSectionProps {
   onOpenAdmissionModal: () => void;
@@ -182,7 +183,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenAdmissionModal
           <div className="grid grid-cols-1 md:grid-cols-12 items-center">
             <div className="md:col-span-5 h-64 md:h-full relative">
               <img
-                src="/src/assets/images/madrasa_facility_1789365582112.jpg"
+                src={facilityImage}
                 alt="مدرسہ کنز العلم کا تعلیمی ہال"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"

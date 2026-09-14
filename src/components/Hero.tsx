@@ -1,6 +1,7 @@
 import React from 'react';
 import { Phone, MessageCircle, Sparkles, CheckCircle2, ShieldCheck, Heart, Award, ArrowLeft } from 'lucide-react';
 import { MADRASA_INFO } from '../data/madrasaData';
+import studentImage from '../assets/images/madrasa_student_1789365542944.jpg';
 
 interface HeroProps {
   onOpenAdmissionModal: (courseTitle?: string) => void;
@@ -146,7 +147,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAdmissionModal }) => {
               
               <div className="relative rounded-3xl overflow-hidden bg-slate-900 shadow-2xl border-4 border-amber-400/60 ring-4 ring-white/10">
                 <img
-                  src="/src/assets/images/madrasa_student_1789365542944.jpg"
+                  src={studentImage}
                   alt="طالب علم مدرسہ کنز العلم ملتان"
                   className="w-full h-auto object-cover object-center max-h-[500px]"
                   referrerPolicy="no-referrer"
