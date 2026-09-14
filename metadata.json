@@ -1,0 +1,6 @@
+{
+  "name": "مدرسہ کنز العلم ایجوکیشن سسٹم",
+  "description": "Modern Islamic education website for Madarsa Kanz-ul-Ilm Education System Multan featuring Hifz-ul-Quran, modern education, admissions, and verified contact.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
